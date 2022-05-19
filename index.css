@@ -1,0 +1,63 @@
+body{
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 15px;
+}
+h2{
+    font-size: 20px;
+    font-weight: normal;
+    color: black;
+}
+div{
+    width: 530px;
+    margin: 60px auto;
+    padding: 5px 30px;
+    color: #566076;
+}
+pre{
+    display: inline-block;
+    background-color: #fafafa;
+    padding: 5px;
+    border-radius: 5px;
+    width: 450px;
+}
+code{
+    display: inline-block;
+    background-color: #fafafa;
+    padding: 7px;
+    border-radius: 5px;
+    color: #696969;
+
+}
+
+.tag {
+    color: #000080;
+ }
+ .atribute {
+    color: #008080;
+ }
+ .value {
+    color: #d01040;
+ }
+ 
+ .comment {
+    color: #999988;
+    font-style: italic;
+ }
+.blue {
+    color: dodgerblue;
+
+}
+
+.num {
+    color: #0086b3;
+ }
+
+  .italic {
+    font-style: italic;
+      color: #ADACB4;
+  }
+
+.overflow{
+    overflow-x: scroll;
+}

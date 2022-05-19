@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="vendor/js/jquery-3.3.1.slim.min.js" defer></script>
+    <script src="vendor/js/popper.min.js" async></script>
+    <link rel="stylesheet" href="vendor/css/bootstrap.min.css" />
+    <script src="vendor/js/bootstrap.min.js" defer></script>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/flexboxgrid2@7.2.1/flexboxgrid2.min.css">
+  </head>
+  <body>
+      <div>
+        <h2>Creating a chart</h2>
+        <p>To creat a chart? we need to instantiate the <code>Chart</code> class. To do this? we need to pass
+        in the 2d context of where we want to draw the chart. Here`s an example.</p>
+        <pre><code><span 
+          class="tag">&lt;canvas</span> <span
+          class="atribute">id=</span> <span
+          class="value">myChart</span> <span
+          class="atribute">width=</span> <span
+          class="value">"400"</span> <span
+          class="atribute">height=</span> <span
+          class="value">"400"</span> <span
+          class="tag">&gt;&lt;/canvas&gt;</span></code></pre>
+
+          <pre><code><span class="comment">// Get the context of the canvas element we want to select</span></code>
+<code><strong>var</strong> ctx = <span class="blue">document</span>.getElemntById(<span class="value">"myChart"</span>.getContext(<span class="value">"2d"</span>;</code>
+ <strong>var</strong> myNewChart = <strong>new</strong> Chart(ctx).PolarArea(data);</code></pre>
+            <p>We can also get the context of our canvas with jQuery. To do this, we need to get the DOM node out the jQuery collection? and call 
+              the <code>getContext("2d")</code> methood on that.
+            </p>
+            <pre class="overflow"><code><span class="comment">// Get the context with jQuery - using jQuery`s .get() methood.</span></code>
+<code><strong>var</strong> ctx = $(<span class="value">"#myChart"</span>).get(<span class="num">0</span>).getContext(<span class="value">"2d"</span>);</code>
+<code><span class="comment">// This will get the first returted nide in the jQuery colliction</span></code>
+<code><strong>var</strong> myNewChart = <strong>new</strong>Chart(ctx);</code>
+            </pre>
+            <p>After we`ve instantiated the Chart class on the canvas we want to draw on,
+              Chart.js will handle the scaling for retina displays</p>
+      </div>
+</body>
+
